@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(73, 75, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%; 
+    max-width: 600px; 
+    text-align: center; 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+
+h1 {
+    color: rgba(255, 255, 255, 0.82);
+    font-weight: 700; 
+    font-size: 2.5rem; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.82);
+    font-weight: 400; 
+    font-size: 1.5rem; 
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+#grid-container {
+    display: grid;
+    gap: 1px;
+    width: 100%; 
+    max-width: 100%; 
+    margin-top: 20px; 
+}
+
+.grid-cell {
+    aspect-ratio: 1; 
+    background-color: white;
+    border: 1px solid #000000;
+}
+
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; 
+}
+
+#controls > * {
+    margin: 5px; 
+}
+
+#reset {
+    padding: 10px 20px;
+    font-size: 1rem; 
+    background-color: #ededec;
+    border: 2px solid #000000;
+    color: #000000;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#reset:hover {
+    background-color: #2e08f0;
+}
+
+button, input[type="number"] {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color: #ededec;
+    color: #000000;
+}
+
+button:hover {
+    background-color: #2e08f0;
+    color: white;
+}
